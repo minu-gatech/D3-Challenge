@@ -48,7 +48,7 @@ d3.csv("assets/data/data.csv").then(function(healthData) {
 
     // Step 3: Create axis functions
     // ==============================
-    var bottomAxis = d3.axisBottom(xLinearScale);
+    var bottomAxis = d3.axisBottom(xLinearScale).ticks(9);
     var leftAxis = d3.axisLeft(yLinearScale);
 
     // Step 4: Append Axes to the chart
