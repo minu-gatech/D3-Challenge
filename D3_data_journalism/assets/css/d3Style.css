@@ -26,8 +26,9 @@
 /* font size dependent on radius, see app.js */
 .stateText {
   font-family: sans-serif;
-  fill: #fff;
+  fill: white;
   text-anchor: middle;
+  font-size: 9px ;  
 }
 
 .stateCircle {
@@ -68,3 +69,33 @@
     font-size: 13px;
   }
 }
+
+
+
+.axisText {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: black;
+  text-anchor: middle;
+}
+
+
+
+/*
+.tooltip {
+  position: absolute;
+  width: 135px;
+  height: 60px;
+  padding: 2px;
+  padding-top: 8px;
+  font: 12px sans-serif;
+  color: white;
+  text-align: center;
+  background: #551aaf;
+  border: 0;
+  border-radius: 10px;
+}
+
+
+}
+*/
