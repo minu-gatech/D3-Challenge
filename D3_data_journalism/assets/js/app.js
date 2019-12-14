@@ -68,7 +68,7 @@ d3.csv("assets/data/data.csv").then(function(healthData) {
     .append("circle")
     .attr("cx", d => xLinearScale(d.poverty))
     .attr("cy", d => yLinearScale(d.healthcare))
-    .attr("r", "10")
+    .attr("r", "12")
     .attr("class","stateCircle")
     
         
@@ -89,13 +89,13 @@ d3.csv("assets/data/data.csv").then(function(healthData) {
       
     // Step 7: Create text inside the circles
     // ======================================
-    chartGroup.selectAll("text")
+    chartGroup.selectAll("textt")
     .data(healthData)
     .enter()
     .append("text")
     .attr("x",d => xLinearScale(d.poverty))
     .attr("y", d => yLinearScale(d.healthcare))
-    .text(d => d.abbr)
+    .text(d => {var abbr=d.abbr;console.log(abbr); return abbr;})
     .attr("class","stateText")
 
   
