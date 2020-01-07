@@ -1,6 +1,6 @@
 # D3-Challenge
 
-![D3](assets/images/output1.PNG)
+![D3](D3_data_journalism/assets/images/output1.PNG)
 
 ### Correlations between Healthcare and Poverty
 
